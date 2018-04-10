@@ -1,0 +1,20 @@
+<% include ../partials/header %>
+
+<div class="content">
+	<div class="center-text">
+		<h1>List of All Modifiers</h1>
+		<% modifiers.forEach(function(modifier) { %>
+			<p><%= modifier.text %></p>
+			<% if (modifier.isBuff === true) { %>
+				<p>Buff</p>
+			<% } else { %>
+				<p>Nerf</p>
+			<% } %>
+		<% }); %> 
+	</div>
+	<div class="links">
+		<a class="btn neutral flush-left" href="/">Back</a>
+	</div>
+</div>
+  	
+<% include ../partials/footer %>

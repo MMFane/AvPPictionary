@@ -1,0 +1,20 @@
+{
+  "name": "avppictionary",
+  "version": "1.0.0",
+  "description": "Artist vs Programmer Pictionary game tool",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "express-sanitizer": "^1.0.3",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sam Yeager",
+  "license": "ISC"
+}

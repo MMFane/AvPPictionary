@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<div class="content">
+	<div class="form-wrapper center-margin">
+		<h1 class="center-text top">Add a Modifier</h1>
+		<form action="/modifiers" method="POST">
+			<div class="form">
+				<div class="item">
+					<label for="text">Text</label>
+					<div class="item">
+						<textarea id="text" name="text" placeholder="what do you want the person drawing to do?" rows="3" maxlength="100"></textarea>
+						<p class="tip grey center-text">Examples: "You get half the normal time," "Pick a topic from the easy word list."</p>
+					</div>
+				</div>
+				<div class="item">
+					<labelfor="radios">Type</label>
+					<div class="center-text">
+						<div class="radio">
+							<input type="radio" id="buff" name="isBuff" value="true">
+							<label for="buff">Buff (positive)</label>
+						</div>
+						<div class="radio">
+							<input type="radio" id="nerf" name="isBuff" value="false">
+							<label for="nerf">Nerf (negative)</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="item center-text">
+				<a class="btn neutral flush-left" href="/">Back</a>
+				<button type="submit" class="btn success flush-right">Add Modifier</button>
+			</div>
+		</form>
+	</div>
+	
+</div>
+
+<% include ../partials/footer %>
